@@ -22,10 +22,10 @@ public class T_Bussiness_Unit implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Click.on(UI_BusinessUnits.CLICK_BTN_NEW_BUSSINESS_UNIT),
-                Switch.toFrame(2),
-                WaitUntil.the(UI_BusinessUnits.INGRESAR_NEW_BUSSINESS_UNIT, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(),
-                Enter.theValue("Provedores").into(UI_BusinessUnits.INGRESAR_NEW_BUSSINESS_UNIT)
+                Click.on(UI_BusinessUnits.CLICK_BTN_NEW_BUSSINESS_UNIT)
+                //Switch.toFrame(2),
+                //WaitUntil.the(UI_BusinessUnits.INGRESAR_NEW_BUSSINESS_UNIT, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(),
+                //Enter.theValue("Provedores").into(UI_BusinessUnits.INGRESAR_NEW_BUSSINESS_UNIT)
         );
     }
 }
